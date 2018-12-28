@@ -1,4 +1,10 @@
-# DevOps in the Cloud: A Story of Three S's
+# DevOps in the Cloud: A Story of Three S's #
+
+## Abstract (~750 characters) ##
+
+DevOps, and especially Cloud-Native DevOps, require a massive change in the mindset of devs, ops, and businesses in general. We're moving from a world where "_the next deployment is in 2 months_" to "_the next deployment is in 2 minutes_" and that requires different tools and techniques. Using a live example, we'll look at building, testing, and deploying a microservice without touching any servers.
+
+## Talk description ##
 
 DevOps has been around for quite a while, though the understanding that it's not just a tool but a mindset seems to still be missing at companies. With the rise of Cloud, and especially Cloud-Native, a second massive change in mindset is taking place as we're all figuring out how we move to the cloud in the best possible way. DevOps in the cloud is a story of three S's:
 
@@ -7,3 +13,7 @@ DevOps has been around for quite a while, though the understanding that it's not
 - Speed: How often does "the Business" say that a new feature can wait a few weeks to a new deployment cycle? What if your patch needs to go in production in the next few hours so fix a massive bug? Speed is becoming, if it wasn't already, a critical factor in how we deploy apps and what processes we follow.
 
 In this session we'll touch on all three elements as we're walking through a live example, deploying apps in a speedy, secure, and serverless manner.
+
+## Notes ##
+
+A surprising amount of people think that with the rise of serverless we don't need any ops (NoOps) or that it only means running functions (FaaS). As developers we tend to treat security as a second-class citizen (together with documentation, and yes I did that too..), but with the many security breaches we've seen it's clear we can no longer do that.
