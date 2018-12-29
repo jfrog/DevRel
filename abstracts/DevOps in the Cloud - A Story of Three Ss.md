@@ -2,7 +2,7 @@
 
 ## Abstract (~750 characters) ##
 
-DevOps, and especially Cloud-Native DevOps, require a massive change in the mindset of devs, ops, and businesses in general. We're moving from a world where "_the next deployment is in 2 months_" to "_the next deployment is in 2 minutes_" and that requires different tools and techniques. Using a live example, we'll look at building, testing, and deploying a microservice without touching any servers.
+In many DevOps talks, you see a speaker from the most amazing companies stand up and describe the perfect world of DevOps. Your environment looks nothing like that and with the digital transformation that companies are undertaking these days (and the awesome buzzwords that accompany it) you feel you're getting behind even further. Fear not, DevOps in the Cloud is possible for everyone and we'll demonstrate that with live examples.
 
 ## Talk description ##
 
