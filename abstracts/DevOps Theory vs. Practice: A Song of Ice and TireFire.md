@@ -9,4 +9,4 @@ In many DevOps talks, you see a speaker from a renowned tech company stand up an
 Surprise– their environment doesn’t really look like that either! In this talk, a speaker from an unnamed tech unicorn describes their amazing environment– and then what they just said gets translated from “thought leader” into plain English for you by an official translator. Stop feeling sad– everything is secretly terrible!
 
 ## Notes ##
-That’s a pair talk: first part is pure fun: thought leadership speaker and his real-world translator. In second part we are going into the details of how to evaluate techology (hype or the real deal?) and how to know wether your team is ready to adopt it?
+That’s a pair talk: the first part is pure fun: thought leadership speaker and his real-world translator. In the second part, we are going into the details of how to evaluate technology (hype or the real deal?) and how to know whether your team is ready to adopt it?
