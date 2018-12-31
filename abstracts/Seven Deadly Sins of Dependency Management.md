@@ -1,6 +1,6 @@
 # Seven Deadly Sins of Dependency Management #
 
-## Abstract (~750 characters) ##
+## Abstract ##
 Most of the package managers in the world suck. In this talk, we’ll present “the seven deadly sins” of package management and review the pros and cons of the most popular ones, including ones you're using today. Then we'll talk about what can be done.
 
 ## Talk description ##
