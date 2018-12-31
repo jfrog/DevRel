@@ -8,7 +8,7 @@ He is a CNCF ambassador, Developer Champion, and a professional conference speak
 
 ## Speaker headshot ##
 
-[Gravatar for jbaruch@jfrog.com](https://s.gravatar.com/avatar/fea6ad3204a6a58bbe40a132f5968925?s=250)
+![Gravatar for jbaruch@jfrog.com](https://s.gravatar.com/avatar/fea6ad3204a6a58bbe40a132f5968925?s=250)
 
 
 ## Video of the speaker ##
