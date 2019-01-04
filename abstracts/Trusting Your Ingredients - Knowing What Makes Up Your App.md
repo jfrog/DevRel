@@ -1,4 +1,4 @@
-# Talk title #
+# Trusting Your Ingredients - Knowing What Makes Up Your App #
 
 ## Abstract (~750 characters) ##
 
