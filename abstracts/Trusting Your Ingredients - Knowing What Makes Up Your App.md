@@ -15,3 +15,5 @@ During the session we’ll look at:
 * Knowing what is in your cluster and taking action
 
 ## Notes ##
+
+This is a talk about general approaches and best practices of software development, not a product pitch :smile:
