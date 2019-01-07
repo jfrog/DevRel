@@ -1,6 +1,6 @@
 # From Zero to Hero in 7 ~~hours~~ years (and counting). Tales of DevRel Practitioner. #
 
-## Abstract (~750 characters) ##
+## Abstract ##
 
 In this talk, Baruch will share his experiences and learning as a DevRel Practitioner with JFrog for the last 7 years. And yes, he'll talk about KPIs and metrics, too.
 
