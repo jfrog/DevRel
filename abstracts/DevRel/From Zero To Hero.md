@@ -1,4 +1,4 @@
-# From Zero to Hero in 7 years (and counting). Tales of DevRel Practitioner. #
+# From Zero to Hero in 7 ~~hours~~ years (and counting). Tales of DevRel Practitioner. #
 
 ## Abstract (~750 characters) ##
 
