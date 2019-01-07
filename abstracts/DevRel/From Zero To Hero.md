@@ -2,7 +2,7 @@
 
 ## Abstract (~750 characters) ##
 
-In this talk, Baruch will share his experiences and learning as a DevRel Practitioner with JFrog for the last 7 years. And yes, he'll talk about measurement.  roofgtffgg
+In this talk, Baruch will share his experiences and learning as a DevRel Practitioner with JFrog for the last 7 years. And yes, he'll talk about measurement, too.
 
 ## Talk description ##
 
