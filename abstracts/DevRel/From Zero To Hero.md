@@ -2,11 +2,11 @@
 
 ## Abstract (~750 characters) ##
 
-In this talk, Baruch will share his experiences and learning as a DevRel Practitioner with JFrog for the last 7 years. And yes, he'll talk about measurement, too.
+In this talk, Baruch will share his experiences and learning as a DevRel Practitioner with JFrog for the last 7 years. And yes, he'll talk about KPIs and metrics, too.
 
 ## Talk description ##
 
-After 7 years in DevRel in JFrog, Baruch knows one thing: DevRel learning never stops. In this talk, he will talk about what he learned over his career and will share his experience on the most important topics in DevRel: First of all, of course, measurement, but also, where (and how) the money comes from, hiring, management (since it's not only self-management now), some other important stuff like too much travel, and last, but not least, measurement. But remember, learning never stops! What are the changes we'll learn he's wrong about everything?!
+After 7 years in DevRel in JFrog, Baruch knows one thing: DevRel learning never stops. In this talk, he will talk about what he learned over his career and will share his experience on the most important topics in DevRel: First of all, of course, KPIs and metrics, but also, where (and how) the money comes from, hiring, metrics (since it's not only self-management now), some other important stuff like too much travel, and last, but not least, KPIs and metrics. But remember, learning never stops! What are the changes we'll learn he's wrong about everything?!
 ## Notes ##
 
 Notes for the committee (not supposed to be public, but hey, they are public here, so behave.)
