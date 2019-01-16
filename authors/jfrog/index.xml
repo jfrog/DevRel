@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JFrog on JFrog Engineering</title>
+    <link>http://engineering.jfrog.com/authors/jfrog/</link>
+    <description>Recent content in JFrog on JFrog Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://engineering.jfrog.com/authors/jfrog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/from-zero-to-hero/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/datadrivendevops/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/a-research-study-into-devops-bottlenecks/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/devops-theory-vs.-practice-a-song-of-ice-and-tirefire/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/devops-in-the-cloud-a-story-of-three-ss/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/hey-helm-can-you-scale/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/one-metadata-to-rule-them-all-open-approach-to-artifact-metadata-for-faster-more-stable-and-more-trusted-releases/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/package-managers-are-evil-but-go-modules-suck-less/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/seven-deadly-sins-of-dependency-management/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2019/01/trusting-your-ingredients-knowing-what-makes-up-your-app/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/</loc>
+    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/tags/abstracts/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/authors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/authors/baruch-sadogursky/</loc>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/tags/devrel/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/authors/eyal-ben-moshe/</loc>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/tags/golang/</loc>
+    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/authors/jfrog/</loc>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/authors/leon-stigter/</loc>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/authors/pearlynn-dang/</loc>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/post/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/search/</loc>
+    <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/tags/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

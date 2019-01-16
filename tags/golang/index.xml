@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on JFrog Engineering</title>
+    <link>http://engineering.jfrog.com/tags/golang/</link>
+    <description>Recent content in Golang on JFrog Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://engineering.jfrog.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang Dependency Management — Doing it Right!</title>
+      <link>http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/</guid>
+      <description>Breaking free from vendoring chains (Photo by Pixabay)
+  Go 1.11 introduced support for Go Modules and with it the ability to do proper dependency management.</description>
+    </item>
+    
+  </channel>
+</rss>
