@@ -12,7 +12,7 @@ License: https://www.wowthemes.net/freebies-license/
     background-image: url("../images/liquid-software.png");
     background-size: 1250px;
     background-repeat: no-repeat;
-    background-position: 50% 50% !important;
+    min-height: 150px;
 }
 
 .menu-icon {
