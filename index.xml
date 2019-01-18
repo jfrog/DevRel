@@ -6,10 +6,19 @@
     <description>Recent content on JFrog Engineering</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jan 2019 08:01:09 -0800</lastBuildDate>
     
 	<atom:link href="http://engineering.jfrog.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building a Kubernetes Powered Central Go Modules Repository</title>
+      <link>http://engineering.jfrog.com/2019/01/building-a-kubernetes-powered-central-go-modules-repository/</link>
+      <pubDate>Fri, 18 Jan 2019 08:01:09 -0800</pubDate>
+      
+      <guid>http://engineering.jfrog.com/2019/01/building-a-kubernetes-powered-central-go-modules-repository/</guid>
+      <description>Abstract Today, Kubernetes is the defacto standard if you want to run container workloads in a production environment. As we set out to build our next generation of products, and run them smoothly in the cloud, we needed to move to Kubernetes too!</description>
+    </item>
     
     <item>
       <title>From Zero to Hero</title>
