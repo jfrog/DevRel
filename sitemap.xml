@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://engineering.jfrog.com/2019/01/datadrivendevops/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -64,6 +69,12 @@
   </url>
   
   <url>
+    <loc>http://engineering.jfrog.com/tags/artifactory/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://engineering.jfrog.com/authors/</loc>
     <priority>0</priority>
   </url>
@@ -89,7 +100,7 @@
   
   <url>
     <loc>http://engineering.jfrog.com/tags/golang/</loc>
-    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,6 +110,12 @@
   
   <url>
     <loc>http://engineering.jfrog.com/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://engineering.jfrog.com/tags/jfrog-cli/</loc>
     <lastmod>2019-01-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

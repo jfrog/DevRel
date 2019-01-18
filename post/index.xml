@@ -22,6 +22,16 @@ Abstract In this talk, Baruch will share his experiences and learning as a DevRe
     </item>
     
     <item>
+      <title>Using the JFrog CLI with GitHub Actions</title>
+      <link>http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/</guid>
+      <description>Use the JFrog CLI with GitHub Actions to automate more!
+  Over the coming weeks, we’ll release a series of blog posts on how you can use the JFrog CLI, Artifactory, and GitHub Actions to build awesome software.</description>
+    </item>
+    
+    <item>
       <title>#DataDrivenDevOps</title>
       <link>http://engineering.jfrog.com/2019/01/datadrivendevops/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>

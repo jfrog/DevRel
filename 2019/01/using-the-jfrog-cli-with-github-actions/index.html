@@ -5,7 +5,7 @@
 	<meta name="description" content="Host, manage and proxy artifacts using the best Docker Registry, Maven Repository, Gradle repository, NuGet repository, Ruby repository, Debian repository npm repository, Yum repository. Deploy, Share and distribute your build artifacts and dependencies from development to production.">
         <meta name="generator" content="Hugo 0.53" />
 	<link rel="icon" href="/images/website-favicon.png">
-	<title>Golang Dependency Management — Doing it Right! | JFrog Engineering</title>
+	<title>Using the JFrog CLI with GitHub Actions | JFrog Engineering</title>
 	
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -14,12 +14,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
 	<link href="/css/medium.css" rel="stylesheet">
 	<link href="/css/additional.css" rel="stylesheet">
-	<meta property="og:title" content="Golang Dependency Management — Doing it Right!" />
-<meta property="og:description" content="Breaking free from vendoring chains (Photo by Pixabay)
-  Go 1.11 introduced support for Go Modules and with it the ability to do proper dependency management." />
+	<meta property="og:title" content="Using the JFrog CLI with GitHub Actions" />
+<meta property="og:description" content="Use the JFrog CLI with GitHub Actions to automate more!
+  Over the coming weeks, we’ll release a series of blog posts on how you can use the JFrog CLI, Artifactory, and GitHub Actions to build awesome software." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/" /><meta property="article:published_time" content="2018-12-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-12-19T00:00:00&#43;00:00"/>
+<meta property="og:url" content="http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/" /><meta property="article:published_time" content="2019-01-07T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-07T00:00:00&#43;00:00"/>
 
 	
 	
@@ -28,10 +28,10 @@
 			{ 
 				"@context": "http://schema.org", 
 				"@type": "BlogPosting",
-				"headline": "Golang Dependency Management — Doing it Right!",
-				"genre": "golang",  
-				"url": "http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/",
-				"datePublished": "2018-12-19 00:00:00 &#43;0000 UTC",
+				"headline": "Using the JFrog CLI with GitHub Actions",
+				"genre": "artifactory, golang, jfrog-cli",  
+				"url": "http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/",
+				"datePublished": "2019-01-07 00:00:00 &#43;0000 UTC",
 				"description": "",
 				"author": {
 					"@type": "Person",
@@ -40,11 +40,11 @@
 			 }
 		</script>
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:url" content="http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/">
-		<meta name="twitter:title" content="Golang Dependency Management — Doing it Right!">
-		<meta name="twitter:description" content="Breaking free from vendoring chains (Photo by Pixabay)
-  Go 1.11 introduced support for Go Modules and with it the ability to do proper dependency management.">
-		<meta name="twitter:image" content="http://engineering.jfrog.com/images/freedom-1886402_640.jpg">
+		<meta name="twitter:url" content="http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/">
+		<meta name="twitter:title" content="Using the JFrog CLI with GitHub Actions">
+		<meta name="twitter:description" content="Use the JFrog CLI with GitHub Actions to automate more!
+  Over the coming weeks, we’ll release a series of blog posts on how you can use the JFrog CLI, Artifactory, and GitHub Actions to build awesome software.">
+		<meta name="twitter:image" content="http://engineering.jfrog.com/images/1_u8pkwbc-_qpf1h6o89tnfg.jpeg">
 		
 		
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -122,25 +122,25 @@
         <p>Share</p>
         <ul>
             <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=Golang%20Dependency%20Management%e2%80%8a%e2%80%94%e2%80%8aDoing%20it%20Right%21&url=http%3a%2f%2fengineering.jfrog.com%2f2018%2f12%2fgolang-dependency-management-doing-it-right%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Using%20the%20JFrog%20CLI%20with%20GitHub%20Actions&url=http%3a%2f%2fengineering.jfrog.com%2f2019%2f01%2fusing-the-jfrog-cli-with-github-actions%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
             <i class="fab fa-twitter"></i>
             </a>
             </li>
             
             <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u=http%3a%2f%2fengineering.jfrog.com%2f2018%2f12%2fgolang-dependency-management-doing-it-right%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http%3a%2f%2fengineering.jfrog.com%2f2019%2f01%2fusing-the-jfrog-cli-with-github-actions%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
             <i class="fab fa-facebook-f"></i>
             </a>
             </li>
             
             <li class="ml-1 mr-1">
-            <a target="_blank" href="https://plus.google.com/share?url=http%3a%2f%2fengineering.jfrog.com%2f2018%2f12%2fgolang-dependency-management-doing-it-right%2f" onclick="window.open(this.href, 'google-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://plus.google.com/share?url=http%3a%2f%2fengineering.jfrog.com%2f2019%2f01%2fusing-the-jfrog-cli-with-github-actions%2f" onclick="window.open(this.href, 'google-share', 'width=550,height=435');return false;">
             <i class="fab fa-google"></i>
             </a>
             </li>
             
             <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fengineering.jfrog.com%2f2018%2f12%2fgolang-dependency-management-doing-it-right%2f" onclick="window.open(this.href, 'linkedin-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fengineering.jfrog.com%2f2019%2f01%2fusing-the-jfrog-cli-with-github-actions%2f" onclick="window.open(this.href, 'linkedin-share', 'width=550,height=435');return false;">
             <i class="fab fa-linkedin"></i>
             </a>
             </li>   
@@ -169,41 +169,108 @@
                                 <a href="/authors/leon-stigter/" class="link-dark">By Leon Stigter</a><br>
                                 <span class="author-description">
                                     <i class="far fa-star"></i>
-                                    Dec 19, 2018
+                                    Jan 7, 2019
                                     <i class="far fa-clock clock"></i>
                                     
                                     
-                                    2 min read
+                                    3 min read
                                     
                                 </span>					
                             </div>
                         </div>			
                                                 
                         
-                        <h1 class="posttitle">Golang Dependency Management — Doing it Right!</h1> 
+                        <h1 class="posttitle">Using the JFrog CLI with GitHub Actions</h1> 
                     </div>
                     
                     
                     <div class="article-post">
-                        <figure class="post__thumbnail">
-    <center><img src="/images/freedom-1886402_640.jpg" alt="Breaking free from vendoring chains"></center>
-    <figcaption><p>Breaking free from vendoring chains (<a href="https://pixabay.com/en/freedom-sky-hands-handcuffs-clouds-1886402/">Photo by Pixabay</a>)</p></figcaption>
+                        
+
+<figure class="post__thumbnail">
+    <center><img src="/images/1_u8pkwbc-_qpf1h6o89tnfg.jpeg" alt="Use the JFrog CLI with GitHub Actions to automate more!"></center>
+    <figcaption><p>Use the JFrog CLI with GitHub Actions to automate more!</p></figcaption>
 </figure>
 
-<p>Go 1.11 introduced support for Go Modules and with it the ability to do proper dependency management. As the Go community moves towards the adoption of modules more and more, the question is “_why not stick with vendoring?_”</p>
+<p><em>Over the coming weeks, we’ll release a series of blog posts on how you can use the JFrog CLI, Artifactory, and GitHub Actions to build awesome software. First up, building a custom GitHub Action.</em></p>
+
+<p>At <a href="https://blog.github.com/2018-10-17-action-demos/">GitHub Universe</a>, probably the most interesting announcement was the release of GitHub Actions. GitHub’s way to create CI/CD pipelines and have them take care of running your build infrastructure.</p>
+
+<p>The beauty of <a href="https://github.com/features/actions">GitHub Actions</a> is that they allow you to automate your workflow within GitHub, like building docker images, sending notifications using Twilio, or… using JFrog Artifactory!</p>
+
+<p>At JFrog, we created our <a href="https://github.com/jfrog/jfrog-cli-go">CLI</a> to make it easy to create scripts to connect to any of the JFrog tools. Having a proper CLI makes scripts easier to read and to maintain, and as an added bonus the CLI makes it incredibly easy to hook up any CI/CD tool to the JFrog suite of tools as well. So, over the holidays I decided to put one and one together and create a GitHub Action that wraps the JFrog CLI.</p>
+
+<p>💻 <em>All the code and files I refer to are available on</em> <a href="https://github.com/retgits/actions/tree/master/jfrog-cli"><em>GitHub</em></a></p>
+
+<h2 id="it-all-starts-with-docker">It all starts with Docker</h2>
+
+<p>Every action that you run as part of your workflow is a Docker image, so to build your own action you need a Dockerfile. The one I used for the JFrog CLI is:</p>
+
+<script type="application/javascript" src="//gist.github.com/retgits/b89d5eefa90b75d08f0e4e4b6ec91a49.js"></script>
+
+<p><em>Overall, it was fairly easy to turn a CLI into a GitHub action</em> 😄</p>
+
+<h2 id="a-simple-script">A simple script</h2>
+
+<p>Now for the actual script that connects to Artifactory</p>
+
+<script type="application/javascript" src="//gist.github.com/retgits/940303369139fa6c33a664cb2095d8fb.js"></script>
+
+<p>For the action, I decided I wanted to support all three authentication mechanisms supported by the JFrog CLI and allow for the commands to have their usual arguments too.</p>
+
+<p>All of that combined results in a GitHub Action that looks like</p>
+
+<figure class="post__thumbnail">
+    <center><img src="/images/1__xg4nzwwyrusrey7dexsvw.png" alt="A JFrog CLI action, but no 🐸 emoji…"></center>
+    <figcaption><p>A JFrog CLI action, but no 🐸 emoji…</p></figcaption>
+</figure>
+
+<h2 id="a-workflow-to-tie-it-together">A workflow to tie it together</h2>
+
+<p>The last step, and the one that developers would use, is to use the Action in a workflow and automate the process of storing artifacts. To do that, you’ll need a small snippet:</p>
+
+<pre><code class="language-hcl">action &quot;JFrog CLI for GitHub Actions&quot; {  
+  uses = &quot;retgits/actions/jfrog-cli@master&quot;  
+  secrets = \[&quot;USER&quot;, &quot;PASSWORD&quot;, &quot;URL&quot;\]  
+  args = \[&quot;cmd&quot;\]  
+  env = {  
+    CRED = &quot;username&quot;  
+  }  
+}
+</code></pre>
+
+<p>There are four parameters for the action:</p>
 
 <ul>
-<li><strong>Source control</strong>: Source control is meant to control source code (<em>the name kind of implied that</em> 😇) and not your dependencies;</li>
-<li><strong>Versioning</strong>: The app you create has a version and the dependency you rely on has one too, with vendoring it’s impossible to know which version of the dependency you have;</li>
-<li><strong>Repository size</strong>: If you store more data, your repositories will grow as well and those vendor folders can be huge. Also when you commit files their history will remain even if you delete them later on;</li>
-<li><strong>Local dependencies</strong>: With anything except the use of modules you cannot replace an existing dependency with a local dependency to test, for example, a new version;</li>
-<li><strong>Build time</strong>: Larger repos will take more time to clone and build, making it more time-consuming to push your latest update to production;</li>
-<li><strong>Repeatable builds</strong>: Without modules I can build my source against version 1.2 of a dependency and the next morning someone else in my team might build using version 1.3;</li>
-<li><strong>Immutable builds</strong>: If you depend on other software, you need that to be immutable and not changed by a developer that decides to experiment a little;</li>
-<li><strong>Project management</strong>: PRs for the project will list all changes in the vendor tree, making it difficult to perform proper validation of code.</li>
+<li><strong>uses</strong>: which GitHub Action and which build is used (in this case it uses the master branch of my jfrog-cli action);</li>
+<li><strong>secrets</strong>: let’s be honest, we should never ever store usernames or passwords in a version control system, so the action uses three parameters from GitHub’s secret vault. The action will get the username, password, and URL from the vault at runtime so nothing is stored in the files in your repo;</li>
+<li><strong>args</strong>: these are the commands that are executed (minus the <code>jfrog rt</code> part)</li>
+<li><strong>env</strong>: these are the environment variables that are passed into the container. In this case, they are the command (“ping”) and the type of authentication you want to use (“username”). <em>These variables are stored in your repository, so you want to make sure you’re okay with that</em>!</li>
 </ul>
 
-<p>So, why use Go modules and not use vendoring? Because you want to do dependency management in Go the right way!</p>
+<p>If you use the exact same action, and the exact same configuration, you’ll end up with an action that simply sends a “ping” to your Artifactory server to see if it is alive. In the GitHub UI, you’ll see</p>
+
+<figure class="post__thumbnail">
+    <center><img src="/images/1_xuvf5wkkpzikhe--tjv9ag.png" alt="The action works 😅"></center>
+    <figcaption><p>The action works 😅</p></figcaption>
+</figure>
+
+<h2 id="the-result">The result</h2>
+
+<p>And in the details below, you’ll see the output of the build and the execution:</p>
+
+<pre><code class="language-bash">### STARTED JFrog CLI for GitHub Actions 21:25:56Z
+... snip ...
+Status: Downloaded newer image for gcr.io/github-actions-images/action-runner:latest
+Authentication using username
+OK
+
+### COMPLETED JFrog CLI for GitHub Actions 21:26:27Z (31.521s)
+</code></pre>
+
+<h2 id="what-s-next">What’s next</h2>
+
+<p>If you want to try out GitHub Actions, head over to the <a href="https://github.com/features/actions">GitHub website</a> and sign up for their beta program. For an environment to test drive all the features of JFrog Artifactory (and a lot more), you can sign up for a test drive on our <a href="https://try.jfrog.com/">demo environment</a>. For questions or comments, feel free to leave a message here or on <a href="https://twitter.com/leonstigter">Twitter</a>!</p>
 
                     </div>
                     
@@ -212,7 +279,15 @@
                         <ul class="tags">
                         
                         <li>
+                        <a href="/tags/artifactory/">artifactory</a>
+                        </li>
+                        
+                        <li>
                         <a href="/tags/golang/">golang</a>
+                        </li>
+                        
+                        <li>
+                        <a href="/tags/jfrog-cli/">jfrog-cli</a>
                         </li>
                         
                         </ul>
@@ -222,10 +297,10 @@
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
-                        <a class="prev d-block col-md-6" href="/2019/01/trusting-your-ingredients-knowing-what-makes-up-your-app/"> &laquo; Trusting Your Ingredients - Knowing What Makes Up Your App</a>
+                        <a class="prev d-block col-md-6" href="/2019/01/from-zero-to-hero/"> &laquo; From Zero to Hero</a>
                     
                     
-                        <a class="next d-block col-md-6 text-lg-right" href="/search/">Search Results &raquo;</a>
+                        <a class="next d-block col-md-6 text-lg-right" href="/2019/01/datadrivendevops/">#DataDrivenDevOps &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>
@@ -244,7 +319,7 @@
     var disqus_config = function () {
     
     
-    this.page.url = "http://engineering.jfrog.com/2018/12/golang-dependency-management-doing-it-right/";
+    this.page.url = "http://engineering.jfrog.com/2019/01/using-the-jfrog-cli-with-github-actions/";
     };
     (function() {
         if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {

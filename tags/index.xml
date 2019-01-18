@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Artifactory</title>
+      <link>http://engineering.jfrog.com/tags/artifactory/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://engineering.jfrog.com/tags/artifactory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Devrel</title>
       <link>http://engineering.jfrog.com/tags/devrel/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
@@ -32,9 +41,18 @@
     <item>
       <title>Golang</title>
       <link>http://engineering.jfrog.com/tags/golang/</link>
-      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://engineering.jfrog.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jfrog Cli</title>
+      <link>http://engineering.jfrog.com/tags/jfrog-cli/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://engineering.jfrog.com/tags/jfrog-cli/</guid>
       <description></description>
     </item>
     
