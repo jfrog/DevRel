@@ -1,4 +1,4 @@
-# Trusting Your Ingredients - Knowing What Makes Up Your App
+# Trusting Your Ingredients - What Building Software And Cheesecake Have In Common
 
 ## Abstract
 
