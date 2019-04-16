@@ -2,17 +2,17 @@
 
 ## Abstract
 
-Making chocolate and writing software have a lot more in common than you might think. In both cases you need to have the right ingredients, you need to trust your suppliers and have transparency in your production process. In this talk, we'll look at how you can (and should) know what is in the app you deploy.
+I have a confession to make. I love writing code almost as much as I love cheesecake. As a developer, I’ve written code and built apps, and I realized that building apps and creating a cheesecake have a lot in common. In both cases you need to have the right ingredients, you need to trust your suppliers and have transparency in your production process. In this talk, we'll look at how you can, and why you should, know what is in the app you deploy.
 
-## Talk description
+## Description
 
-Building software is like a box of chocolates, you never know what you're gonna get. That is obviously a big challenge as it's more important than ever to know what you're putting in your app in terms of code and licenses. If you're deploying it to a Kubernetes cluster it gets even more challenging, and important, because the container you're running your app in now plays a role too.
-Let's look at building software in the same way as assembling a box of chocolates. To make the best chocolates, you don't only need the best ingredients (dependencies), you also need to trust your suppliers (vulnerabilities, licenses). As you're putting your box together (pipeline) you want full transparency in what makes it to your consumers.
-During the session we’ll look at:
+As a developer, I always thought that security, like documentation, would be done by someone else. While that might have been true in the past, in today’s world that model no longer works. As a developer you’re responsible for the security of your app. Security in this case should be seen in the broadest sense of the word, ranging from licenses to software packages. A chef creating cheesecake has similar challenges. The ingredients of a cheesecake are similar to the software packages a developer uses. The preparation is similar to the DevOps pipeline, and recipe is similar to the licenses for developers. Messing up any of those means you have a messy kitchen, or a data breach!
 
-* Building an app and looking at it's dependencies
-* Validating the licenses and looking at vulnerabilities
-* Knowing what is in your cluster and taking action
+In this talk we'll look at:
+
+* Why do we care about licenses?
+* How does Sec get into the early stages of DevSecOps?
+* What can chefs and devs learn from each other?
 
 ## Notes
 
