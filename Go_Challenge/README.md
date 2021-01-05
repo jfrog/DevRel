@@ -21,7 +21,7 @@ Configure the project's repositories:
 Build the project with go and resolve the project dependencies from Artifactory.
 > jfrog rt go build --build-name=go-challenge-build --build-number=1 
 
-Publish version v1.0.0 of the package to the go-local repository in Artifactory.
+Publish version v1.0.0 of the package to the go-challenge-local repository in Artifactory.
 > jfrog rt gp go-challenge v1.0.0 --build-name=go-challenge-build --build-number=1
 
 Collect environment variables and add them to the build info.
