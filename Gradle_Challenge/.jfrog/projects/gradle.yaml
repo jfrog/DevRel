@@ -1,0 +1,12 @@
+version: 1
+type: gradle
+resolver:
+  repo: gradle-challenge
+  serverId: Default-Server
+deployer:
+  repo: gradle-challenge
+  serverId: Default-Server
+  ivyPattern: '[organization]/[module]/ivy-[revision].xml'
+  artifactPattern: '[organization]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]'
+usePlugin: true
+useWrapper: true
