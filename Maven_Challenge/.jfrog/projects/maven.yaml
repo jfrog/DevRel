@@ -1,0 +1,10 @@
+version: 1
+type: maven
+resolver:
+  serverId: Default-Server
+  snapshotRepo: maven-challenge
+  releaseRepo: maven-challenge
+deployer:
+  serverId: Default-Server
+  snapshotRepo: maven-challenge
+  releaseRepo: maven-challenge

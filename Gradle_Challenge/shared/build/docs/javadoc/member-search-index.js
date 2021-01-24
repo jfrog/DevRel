@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"org.gradle.shared","c":"Person","l":"getName()"},{"p":"org.gradle.shared","c":"Person","l":"Person(String)","url":"%3Cinit%3E(java.lang.String)"},{"p":"org.gradle.shared","c":"Person","l":"readProperty()"},{"p":"org.gradle.shared","c":"Person","l":"setName(String)","url":"setName(java.lang.String)"}]

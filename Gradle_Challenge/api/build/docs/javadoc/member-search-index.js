@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"org.gradle.api","c":"PersonList","l":"doSomethingWithImpl()"},{"p":"org.gradle.apiImpl","c":"Impl","l":"Impl()","url":"%3Cinit%3E()"},{"p":"org.gradle.apiImpl","c":"Impl","l":"implMethod()"},{"p":"org.gradle.api","c":"PersonList","l":"PersonList()","url":"%3Cinit%3E()"}]

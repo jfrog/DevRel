@@ -1,0 +1,56 @@
+{
+  "type" : "gradle",
+  "id" : "org.jfrog.example.gradle:api:1.0-SNAPSHOT",
+  "repository" : "gradle-challenge",
+  "artifacts" : [ {
+    "type" : "javadoc-jar",
+    "sha1" : "3764b3824ce6acab25d87c1dd806b733a6ac172a",
+    "md5" : "6dbd5ef41cdd732916cf5cb1eaecc001",
+    "name" : "api-1.0-SNAPSHOT-javadoc.jar",
+    "path" : "org/jfrog/example/gradle/api/1.0-SNAPSHOT/api-1.0-SNAPSHOT-javadoc.jar"
+  }, {
+    "type" : "sources-jar",
+    "sha1" : "c3f5657e21a998662abd83cb16380f50523f1b81",
+    "md5" : "116c63736207b94f5c107937c83d3d5e",
+    "name" : "api-1.0-SNAPSHOT-sources.jar",
+    "path" : "org/jfrog/example/gradle/api/1.0-SNAPSHOT/api-1.0-SNAPSHOT-sources.jar"
+  }, {
+    "type" : "jar",
+    "sha1" : "a68a3645f7743f36c16f22f0836198a2b5e7693d",
+    "md5" : "436dd01390bfdad6eeab96eca462da5d",
+    "name" : "api-1.0-SNAPSHOT.jar",
+    "path" : "org/jfrog/example/gradle/api/1.0-SNAPSHOT/api-1.0-SNAPSHOT.jar"
+  } ],
+  "excludedArtifacts" : [ ],
+  "dependencies" : [ {
+    "type" : "jar",
+    "sha1" : "d6160f0f3f8d45ad88ad685eac5a6b83ab2f2c25",
+    "md5" : "4eb84317f278675224d1844a5bb2b31a",
+    "id" : "org.jfrog.example.gradle:shared:1.0-SNAPSHOT",
+    "scopes" : [ "compileClasspath" ]
+  }, {
+    "type" : "jar",
+    "sha1" : "16313e02a793435009f1e458fa4af5d879f6fb11",
+    "md5" : "237a8e845441bad2e535c57d985c8204",
+    "id" : "commons-lang:commons-lang:2.4",
+    "scopes" : [ "compileClasspath" ]
+  }, {
+    "type" : "jar",
+    "sha1" : "14dd208c9077c462b813ed41c21c57f6a8153694",
+    "md5" : "4cad3d21b85b369c8b00dfb84e270e02",
+    "id" : "org.apache.wicket:wicket:1.3.7",
+    "scopes" : [ "compileClasspath" ]
+  }, {
+    "type" : "jar",
+    "sha1" : "0ad6ae511ca4608a18317fcb19850fd113bb2ae8",
+    "md5" : "b0bf5f906af5a936992514ed087f1fa2",
+    "id" : "commons-io:commons-io:1.2",
+    "scopes" : [ "compileClasspath" ]
+  }, {
+    "type" : "jar",
+    "sha1" : "61fce919969d134a4fa2ba4fd5bf151ea63fce13",
+    "md5" : "2d673736b993aa112fda47b9061e4e48",
+    "id" : "org.slf4j:slf4j-api:1.4.2",
+    "scopes" : [ "compileClasspath" ]
+  } ]
+}

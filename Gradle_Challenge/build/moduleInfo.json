@@ -1,0 +1,8 @@
+{
+  "type" : "gradle",
+  "id" : "org.jfrog.example.gradle:gradle-example:1.0-SNAPSHOT",
+  "repository" : "",
+  "artifacts" : [ ],
+  "excludedArtifacts" : [ ],
+  "dependencies" : [ ]
+}
