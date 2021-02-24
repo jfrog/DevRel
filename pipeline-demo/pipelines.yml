@@ -1,0 +1,94 @@
+resources:
+  - name: be_gitRepo
+    type: GitRepo
+    configuration:
+      path: mjmckay/java-backend
+      gitProvider: mjmckay_github
+
+  - name: appl_build_info
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: demoArt
+      buildName: devnexus_build
+      buildNumber: 100
+
+  - name: appl_promoted_build_info
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: demoArt
+      buildName: devnexus_build
+      buildNumber: 100
+
+pipelines:
+  - name: demo_application
+    steps:
+      - name: bld_backend
+        type: MvnBuild
+        configuration:
+          sourceLocation: .
+          mvnCommand: clean install -ntp
+          configFileLocation: .
+          configFileName: mvn-art-config
+          inputResources:
+            - name: be_gitRepo
+          integrations:
+            - name: demoArt
+          runtime:
+            type: image
+            image:
+              auto:
+                language: java
+                versions:
+                  - "11"
+        execution:
+          onStart:
+            - javac -version
+            - mvn --version
+
+      - name: build_app
+        type: Bash
+        configuration:
+          environmentVariables:
+            dockerImageName: mjmckay.jfrog.io/devnexus-docker/devnexus
+            dockerImageTag: ${run_number}
+          inputResources:
+            - name: be_gitRepo
+              trigger: false
+          inputSteps:
+            - name: bld_backend
+          integrations:
+            - name: demoArt
+        execution:
+          onStart:
+            - rm -rf $run_dir/workspace/jfrog
+            - retry_command jfrog rt config --url $int_demoArt_url --user $int_demoArt_user --apikey $int_demoArt_apikey --interactive=false
+            - pushd $res_be_gitRepo_resourcePath
+            - add_run_variables buildStepName=${step_name}
+            - add_run_variables ${step_name}_buildNumber=${run_number}
+            - add_run_variables ${step_name}_buildName=${pipeline_name}
+            - mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+            - docker build --pull --no-cache -t $dockerImageName:$dockerImageTag --build-arg REGISTRY=${int_demoArt_url} --build-arg APIKEY=${int_demoArt_apikey} .
+            - jfrog rt bce $pipeline_name $run_number
+            - jfrog rt docker-push $dockerImageName:$dockerImageTag demo-docker-virtual --build-name=$pipeline_name --build-number=$run_number
+            - add_run_files /tmp/jfrog/. jfrog
+
+      - name: publish_app_build
+        type: PublishBuildInfo
+        configuration:
+          forceXrayScan: false
+          inputSteps:
+            - name: build_app
+          outputResources:
+            - name: appl_build_info
+
+      - name: promote_app_build
+        type: PromoteBuild
+        configuration:
+          targetRepository: docker-production
+          integrations:
+            - name: demoArt
+          inputResources:
+            - name: appl_build_info
+          outputResources:
+            - name: appl_promoted_build_info
+
