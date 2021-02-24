@@ -1,0 +1,3 @@
+NOTE: Source code originally from https://github.com/spring-guides/gs-spring-boot-docker/commit/00ab43ddd9f70b39fa06c76f79e280077d17c336
+
+
