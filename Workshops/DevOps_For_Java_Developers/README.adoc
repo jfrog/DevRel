@@ -1,0 +1,94 @@
+== Workshop Instructions
+
+=== Step 1:
+If you have not already signed up for a free tier Cloud JFrog account, do so!
+
+=== Step 2:
+Fork and clone the DevRel Github repository
+
+https://github.com/jfrog/DevRel
+git clone https://github.com/<your_user>/DevRel.git
+
+Navigate to the 'complete' directory:
+
+cd Workshops/DevOps_For_Java_Developers/gs-spring-boot-docker/complete
+
+=== Step 3:
+Build the project!
+
+mvn clean install
+mvn package && java -jar target/spring-boot-docker-0.1.0.jar
+
+=== Step 4:
+Create repositories
+
+Two LOCAL repositories of type MAVEN:
+
+    ws-mvn-snapshot-local
+    ws-mvn-release-local
+
+One REMOTE repository of type MAVEN:
+
+    ws-mvn-remote (url: https://repo1.maven.org/maven2/)
+
+One VIRTUAL repository of type MAVEN:
+
+    ws-mvn-virtual (add all maven repositories and set default to ws-mvn-release-local)
+
+=== Step 5:
+Download and configure the JFrog CLI: https://jfrog.com/getcli/
+
+jfrog rt c
+
+=== Step 6:
+Configure the Maven project to resolve artifacts through Artifactory
+
+jfrog rt mvn-config
+
+(Set all resolution and deployment repositories to ws-mvn-virtual)
+
+=== Step 7:
+Create Docker Repositories
+
+Three Docker Repositories (one LOCAL, one REMOTE, one VIRTUAL)
+
+   ws-docker-local
+   ws-docker-remote
+   ws-docker-virtual
+
+=== Step 8:
+Containerize!
+
+Change FROM directive in the Dockerfile.
+
+FROM openjdk:8-jdk-alpine
+
+        becomes
+
+FROM SERVER_NAME.jfrog.io/VIRTUAL_REPO_NAME/openjdk:8-jdk-alpine
+
+For example: 
+FROM mjdevops.jfrog.io/ws-docker-virtual/openjdk:8-jdk-alpine
+
+=== Step 9:
+Build and Tag
+
+   docker login ${SERVERNAME}.jfrog.io
+
+From the same directory as your Dockerfile, build and tag the image:
+
+   mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+
+   docker build --tag ${SERVERNAME}.jfrog.io/${VIRTREPO}/workshop:latest .
+
+=== Step 10:
+Push your image to Artifactory!
+
+   docker push SERVERNAME.jfrog.io/VIRTUALREPO/workshop:latest
+
+
+
+
+
+ 
+
