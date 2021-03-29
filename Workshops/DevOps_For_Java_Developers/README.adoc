@@ -53,10 +53,36 @@ Example settings:
 
 === Step 6:
 Configure Maven project to resolve artifacts through Artifactory
+NOTE: Make sure that you are in the "complete" directory where the .pom file is before running this command
 
     jfrog rt mvn-config
 
 (Set all resolution and deployment repositories to ws-mvn-virtual)
+
+Example settings:
+
+    Resolve dependencies from Artifactory? (y/n)? y
+    Set Artifactory server ID: myartifactory  (This is the same 'Artifactory server ID' that you set when running `jfrog rt c`)
+    Set resolution repository for release dependencies (press Tab for options): ws-mvn-virtual
+    Set resolution repository for snapshot dependencies (press Tab for options): ws-mvn-virtual
+    Deploy project artifacts to Artifactory? (y/n)? y
+    Set Artifactory server ID: myartifactory  (Same setting as above - this is the same 'Artifactory server ID' that you set when running `jfrog rt c`)
+    Set repository for release artifacts deployment (press Tab for options): ws-mvn-virtual
+    Set repository for snapshot artifacts deployment (press Tab for options): ws-mvn-virtual
+
+This configuration will create the following file: .jfrog/projects/maven.yaml
+
+Since you have built this project already with maven in Step 3, all of the project dependencies will be cached in your local maven repository on your machine (they will not be redownloaded). The easiest thing to do is to either remove or backup your local maven repository using one of the following commands:
+
+    rm -rf ~/.m2/repository
+
+OR
+
+    mv ~/.m2/repository ~/.m2/repository_BAK
+
+With a clean repository, you can now use the JFrog CLI to resolve all of your project dependencies using the following command:
+
+    jfrog rt mvn clean install
 
 === Step 7:
 Create Docker Repositories
@@ -79,6 +105,7 @@ becomes
     FROM SERVER_NAME.jfrog.io/VIRTUAL_REPO_NAME/openjdk:8-jdk-alpine
 
 For example: 
+    
     FROM mjdevops.jfrog.io/ws-docker-virtual/openjdk:8-jdk-alpine
 
 === Step 9:
