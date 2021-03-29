@@ -59,6 +59,19 @@ NOTE: Make sure that you are in the "complete" directory where the .pom file is 
 
 (Set all resolution and deployment repositories to ws-mvn-virtual)
 
+Example settings:
+
+    Resolve dependencies from Artifactory? (y/n)? y
+    Set Artifactory server ID: myartifactory  (This is the same 'Artifactory server ID' that you set when running `jfrog rt c`)
+    Set resolution repository for release dependencies (press Tab for options): ws-mvn-virtual
+    Set resolution repository for snapshot dependencies (press Tab for options): ws-mvn-virtual
+    Deploy project artifacts to Artifactory? (y/n)? y
+    Set Artifactory server ID: myartifactory  (Same setting as above - this is the same 'Artifactory server ID' that you set when running `jfrog rt c`)
+    Set repository for release artifacts deployment (press Tab for options): ws-mvn-virtual
+    Set repository for snapshot artifacts deployment (press Tab for options): ws-mvn-virtual
+
+This configuration will create the following file: .jfrog/projects/maven.yaml
+
 Since you have built this project already with maven in Step 3, all of the project dependencies will be cached in your local maven repository on your machine (they will not be redownloaded). The easiest thing to do is to either remove or backup your local maven repository using one of the following commands:
 
     rm -rf ~/.m2/repository
