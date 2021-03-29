@@ -34,15 +34,25 @@ One REMOTE repository of type MAVEN:
 
 One VIRTUAL repository of type MAVEN:
 
-    ws-mvn-virtual (add all maven repositories and set default to ws-mvn-release-local)
+    ws-mvn-virtual (add all maven repositories and set default deployment repo to ws-mvn-release-local)
 
 === Step 5:
 Download and configure the JFrog CLI: https://jfrog.com/getcli/
 
     jfrog rt c
 
+Example settings:
+
+    Artifactory server ID: myartifactory (This is a nickname for you to remember. It can be anything you want.)
+    JFrog Artifactory URL: https://SERVERNAME.jfrog.io/artifactory (Use your artifactory URL here. Don't forget the "/artifactory" part!
+    Access token (Leave blank for username and password/API key): (blank)
+    User: USERNAME (This is either the username you use to login to your JFrog Platform instance or any other username you set up)
+    Password/API key: (Your password)
+    For commands which don't use external tools or the JFrog Distribution service, JFrog CLI supports replacing the configured username and password/API key with automatically created access token that's refreshed hourly. Enable this setting? (y/n)? n
+    Is the Artifactory reverse proxy configured to accept a client certificate? (y/n)? n
+
 === Step 6:
-Configure the Maven project to resolve artifacts through Artifactory
+Configure Maven project to resolve artifacts through Artifactory
 
     jfrog rt mvn-config
 
@@ -55,7 +65,7 @@ Three Docker Repositories (one LOCAL, one REMOTE, one VIRTUAL)
 
    ws-docker-local
    ws-docker-remote
-   ws-docker-virtual
+   ws-docker-virtual (add both local and remote Docker repositories and set default deployment repo to ws-docker-local) 
 
 === Step 8:
 Containerize!
@@ -74,22 +84,19 @@ For example:
 === Step 9:
 Build and Tag
 
-   docker login ${SERVERNAME}.jfrog.io
+   docker login SERVERNAME.jfrog.io
 
 From the same directory as your Dockerfile, build and tag the image:
 
    mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-   docker build --tag ${SERVERNAME}.jfrog.io/${VIRTREPO}/workshop:latest .
+   docker build --tag SERVERNAME.jfrog.io/ws-docker-virtual/workshop:latest .
+
+Pssst! Don't forget that trailing "." in the Docker build command!
 
 === Step 10:
 Push your image to Artifactory!
 
-   docker push SERVERNAME.jfrog.io/VIRTUALREPO/workshop:latest
+   docker push SERVERNAME.jfrog.io/ws-docker-virtual/workshop:latest
 
-
-
-
-
- 
 
