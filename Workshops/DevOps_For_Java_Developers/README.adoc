@@ -1,4 +1,4 @@
-== Workshop Instructions
+== Workshop Instructions — PART 1
 
 === Step 1:
 If you have not already signed up for a free tier Cloud JFrog account, do so here: https://bit.ly/MelissaWKSHP
@@ -127,3 +127,62 @@ Push your image to Artifactory!
    docker push SERVERNAME.jfrog.io/ws-docker-virtual/workshop:latest
 
 
+== Workshop Instructions — PART 2
+
+=== Step 1:
+Ensure your artifacts from PART 1 show up in your JFrog Platform instance
+
+Login to your JFrog Platform instance in your browser.
+You should see artifacts in cache for both your Docker and Maven remote repository caches
+
+    ws-docker-remote-cache
+    ws-mvn-remote-cache
+
+=== Step 2:
+Index your repositories
+
+In your JFrog Platform instance, navigate to the Administration module.
+
+Click on "Xray Security & Compliance" in the menu and then choose "Indexed Resources".
+
+The following repositories should be included. Click "Add a Repository" to include any that are missing.
+
+    ws-docker-local
+    ws-docker-remote
+    ws-mvn-release-local
+    ws-mvn-remote
+    ws-mvn-snapshot-local
+
+It may take awhile to index all of the artifacts. The index column will indicate the status.
+
+=== Step 3:
+Define a Security Policy
+
+Navigate to the Application module in your JFrog Platform instance, expand the Security & Compliance menu and select "Policies".
+
+Create a new policy called ws-security, of type Security.
+
+Add a Rule called ws-rule and select "High" in the Minimal Severity dropdown.
+
+=== Step 4: 
+Define a Watch
+
+Navigate to the Application module in your JFrog Platform instance, expand the Security & Compliance menu and select "Watch".
+
+Create a new watch called ws-watch, with your repositories for your workshop project and your "ws-security" policy assigned to it by clicking "Manage Policies".
+
+=== Step 5:
+Run a Scan
+
+Hover over your Watch and click the "Apply on Existing Content" icon to manually trigger it. (This may take some time to complete)
+
+=== Step 6:
+Setup/Import your project in your IDE
+
+=== Step 7:
+Setup your XRay integration with the JFrog plugin
+
+Install and configure the plugin with your Xray url and your login credentials.
+
+Example URL setting: https://SERVERNAME.jfrog.io/xray
+ 
