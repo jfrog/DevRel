@@ -143,7 +143,7 @@ Index your repositories
 
 In your JFrog Platform instance, navigate to the Administration module.
 
-Click on "Xray Security & Compliance" in the menu and then choose "Indexed Resources".
+Expand the "Xray" menu, click on "Settings", and then choose "Indexed Resources".
 
 The following repositories should be included. Click "Add a Repository" to include any that are missing.
 
@@ -158,7 +158,7 @@ It may take awhile to index all of the artifacts. The index column will indicate
 === Step 3:
 Define a Security Policy
 
-Navigate to the Application module in your JFrog Platform instance, expand the Security & Compliance menu and select "Policies".
+Navigate to the Administration module in your JFrog Platform instance, expand the "Xray" menu and select "Watches & Policies".
 
 Create a new policy called ws-security, of type Security.
 
@@ -167,7 +167,7 @@ Add a Rule called ws-rule and select "High" in the Minimal Severity dropdown.
 === Step 4: 
 Define a Watch
 
-Navigate to the Application module in your JFrog Platform instance, expand the Security & Compliance menu and select "Watch".
+Navigate to the Administration module in your JFrog Platform instance, expand the "Xray" menu and select "Watches & Policies".
 
 Create a new watch called ws-watch, with your repositories for your workshop project and your "ws-security" policy assigned to it by clicking "Manage Policies".
 
