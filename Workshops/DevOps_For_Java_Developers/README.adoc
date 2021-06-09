@@ -39,16 +39,22 @@ One VIRTUAL repository of type MAVEN:
 === Step 5:
 Download and configure the JFrog CLI: https://jfrog.com/getcli/
 
-    jfrog rt c
+    jfrog config add  (jfrog rt config is deprecated)
 
 Example settings:
 
     Artifactory server ID: myartifactory (This is a nickname for you to remember. It can be anything you want.)
+    
     JFrog Artifactory URL: https://SERVERNAME.jfrog.io/artifactory (Use your artifactory URL here. Don't forget the "/artifactory" part!
+    
     Access token (Leave blank for username and password/API key): (blank)
+    
     User: USERNAME (This is either the username you use to login to your JFrog Platform instance or any other username you set up)
+    
     Password/API key: (Your password)
+    
     For commands which don't use external tools or the JFrog Distribution service, JFrog CLI supports replacing the configured username and password/API key with automatically created access token that's refreshed hourly. Enable this setting? (y/n)? n
+    
     Is the Artifactory reverse proxy configured to accept a client certificate? (y/n)? n
 
 === Step 6:
