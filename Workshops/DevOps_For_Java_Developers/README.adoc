@@ -45,7 +45,7 @@ Example settings:
 
     Artifactory server ID: myartifactory (This is a nickname for you to remember. It can be anything you want.)
     
-    JFrog Artifactory URL: https://SERVERNAME.jfrog.io/artifactory (Use your artifactory URL here. Don't forget the "/artifactory" part!
+    JFrog platform URL: https://SERVERNAME.jfrog.io 
     
     Access token (Leave blank for username and password/API key): (blank)
     
