@@ -14,7 +14,7 @@ https://github.com/jfrog/DevRel
 
 Navigate to the 'complete' directory:
 
-    cd Workshops/DevOps_For_Java_Developers/gs-spring-boot-docker/complete
+    cd DevRel/Workshops/DevOps_For_Java_Developers/gs-spring-boot-docker/complete
 
 === Step 3:
 Build the project!
