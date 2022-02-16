@@ -19,7 +19,6 @@ Navigate to the 'complete' directory:
 === Step 3:
 Build the project!
 
-    mvn clean install
     mvn package && java -jar target/spring-boot-docker-0.1.0.jar
 
 === Step 4:
@@ -40,21 +39,21 @@ One VIRTUAL repository of type MAVEN:
 === Step 5:
 Download and configure the JFrog CLI: https://jfrog.com/getcli/
 
-    jfrog config add  (jfrog rt config is deprecated)
+    jf config add
 
 Example settings:
 
-    Artifactory server ID: myartifactory (This is a nickname for you to remember. It can be anything you want.)
+    Choose a server ID: myartifactory (This is a nickname for you to remember. It can be anything you want.)
     
     JFrog platform URL: https://SERVERNAME.jfrog.io 
     
-    Access token (Leave blank for username and password/API key): (blank)
+    (Save and continue)
     
-    User: USERNAME (This is either the username you use to login to your JFrog Platform instance or any other username you set up)
+    JFrog access token (Leave blank for username and password/API key): (blank)
+    
+    JFrog username: USERNAME (This is either the username you use to login to your JFrog Platform instance or any other username you set up)
     
     Password/API key: (Your password)
-    
-    For commands which don't use external tools or the JFrog Distribution service, JFrog CLI supports replacing the configured username and password/API key with automatically created access token that's refreshed hourly. Enable this setting? (y/n)? n
     
     Is the Artifactory reverse proxy configured to accept a client certificate? (y/n)? n
 
@@ -62,20 +61,21 @@ Example settings:
 Configure Maven project to resolve artifacts through Artifactory
 NOTE: Make sure that you are in the "complete" directory where the .pom file is before running this command
 
-    jfrog rt mvn-config
+    jf mvnc
 
 (Set all resolution and deployment repositories to ws-mvn-virtual)
 
 Example settings:
 
     Resolve dependencies from Artifactory? (y/n)? y
-    Set Artifactory server ID: myartifactory  (This is the same 'Artifactory server ID' that you set when running `jfrog rt c`)
+    Set Artifactory server ID: myartifactory  (This is the same 'Artifactory server ID' that you set when running `jf config add`)
     Set resolution repository for release dependencies (press Tab for options): ws-mvn-virtual
     Set resolution repository for snapshot dependencies (press Tab for options): ws-mvn-virtual
     Deploy project artifacts to Artifactory? (y/n)? y
-    Set Artifactory server ID: myartifactory  (Same setting as above - this is the same 'Artifactory server ID' that you set when running `jfrog rt c`)
+    Set Artifactory server ID: myartifactory  (Same setting as above - this is the same 'Artifactory server ID' that you set when running `jf config add`)
     Set repository for release artifacts deployment (press Tab for options): ws-mvn-virtual
     Set repository for snapshot artifacts deployment (press Tab for options): ws-mvn-virtual
+    Would you like to filter out some of the deployed artifacts? (y/n)? n
 
 This configuration will create the following file: .jfrog/projects/maven.yaml
 
@@ -89,7 +89,7 @@ OR
 
 With a clean repository, you can now use the JFrog CLI to resolve all of your project dependencies using the following command:
 
-    jfrog rt mvn clean install
+    jf mvn package
 
 === Step 7:
 Create Docker Repositories
