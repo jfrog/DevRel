@@ -4,11 +4,13 @@
 If you have not already signed up for a free tier Cloud JFrog account, do so here: https://bit.ly/MelissaWKSHP
 
 === Step 2:
-Fork and clone the DevRel Github repository
+Clone the DevRel Github repository
 
 https://github.com/jfrog/DevRel
 
-    git clone https://github.com/<your_user>/DevRel.git
+    git clone https://github.com/jfrog/DevRel.git
+    - OR -
+    git clone git@github.com:jfrog/DevRel.git
 
 Navigate to the 'complete' directory:
 
