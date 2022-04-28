@@ -1,7 +1,7 @@
 == Workshop Instructions — PART 1
 
 === Step 1:
-If you have not already signed up for a free tier Cloud JFrog account, do so here: https://bit.ly/MelissaWKSHP
+If you have not already signed up for a free tier Cloud JFrog account, do so here: https://jfrog.co/FreeDevOpsLJC
 
 === Step 2:
 Clone the DevRel Github repository
