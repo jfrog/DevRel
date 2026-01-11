@@ -12,6 +12,6 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^4.18.2",
-    "expres": "0.0.5"
+
   }
 }
