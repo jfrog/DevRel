@@ -3,5 +3,7 @@ set -euo pipefail
 
 mkdir -p evidence
 echo "[+] Generating SBOM (CycloneDX)..."
-npx @cyclonedx/cyclonedx-npm --output-file evidence/sbom.json
+cd app
+npx @cyclonedx/cyclonedx-npm --output-file ../evidence/sbom.json
+cd ..
 echo "[+] SBOM created: evidence/sbom.json"
