@@ -57,3 +57,7 @@ jobs:
         with:
           name: evidence
           path: demos/showcases/evidence-gated-ci/evidence/
+
+      - name: Generate Summary Report
+        if: always()
+        run: bash scripts/generate-summary.sh
