@@ -1,7 +1,0 @@
--classpath '/Users/batelt/Downloads/Gradle_Challenge/gradle-example/shared/build/classes/java/main:/Users/batelt/Downloads/Gradle_Challenge/gradle-example/shared/build/resources/main'
--d '/Users/batelt/Downloads/Gradle_Challenge/gradle-example/shared/build/docs/javadoc'
--doctitle 'shared 1.0-SNAPSHOT API'
--quiet 
--windowtitle 'shared 1.0-SNAPSHOT API'
-'/Users/batelt/Downloads/Gradle_Challenge/gradle-example/shared/src/main/java/org/gradle/shared/Person.java'
-'/Users/batelt/Downloads/Gradle_Challenge/gradle-example/shared/src/main/java/org/gradle/shared/package-info.java'

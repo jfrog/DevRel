@@ -1,1 +1,0 @@
-# JFrog-Go-Challenge

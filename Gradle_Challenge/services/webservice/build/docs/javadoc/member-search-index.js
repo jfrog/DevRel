@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"org.gradle.webservice","c":"TestTest","l":"method()"},{"p":"org.gradle.webservice","c":"TestTest","l":"TestTest()","url":"%3Cinit%3E()"}]
