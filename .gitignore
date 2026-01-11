@@ -6,6 +6,6 @@
 **/*.key
 **/*.pem
 !**/public.pem
-
+node_modules/
 # Keep empty directories
 !**/.gitkeep
