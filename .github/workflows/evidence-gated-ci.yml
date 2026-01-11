@@ -1,0 +1,59 @@
+name: Evidence-Gated CI Demo
+
+on:
+  push:
+    paths:
+      - 'demos/showcases/evidence-gated-ci/**'
+  pull_request:
+    paths:
+      - 'demos/showcases/evidence-gated-ci/**'
+
+jobs:
+  build-evidence-and-gate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: demos/showcases/evidence-gated-ci
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: demos/showcases/evidence-gated-ci/app
+        run: npm ci
+
+      - name: Generate SBOM
+        run: bash scripts/gen-sbom.sh
+
+      - name: Run policy gate
+        run: bash scripts/gate.sh
+
+      # Bundle evidence even if gate fails (so you can show forensic output)
+      - name: Bundle evidence
+        if: always()
+        run: bash scripts/bundle-evidence.sh
+
+      - name: Write signing key from secret
+        if: always()
+        run: |
+          mkdir -p keys
+          echo "${{ secrets.EVIDENCE_SIGNING_PRIVATE_KEY }}" > keys/private.pem
+          chmod 600 keys/private.pem
+
+      - name: Sign evidence bundle
+        if: always()
+        run: bash scripts/sign-evidence.sh
+
+      - name: Verify signature
+        if: always()
+        run: bash scripts/verify-evidence.sh
+
+      - name: Upload evidence artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence
+          path: demos/showcases/evidence-gated-ci/evidence/
