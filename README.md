@@ -157,7 +157,7 @@ For detailed contribution guidelines, please see [CONTRIBUTING.md](./CONTRIBUTIN
 
 ## 📜 License
 
-This repository is licensed under [LICENSE TYPE] - see the [LICENSE](./LICENSE) file for details.
+This repository is licensed under MIT - see the [LICENSE](./LICENSE) file for details.
 
 Individual workshops, demos, or code samples may have their own licenses - please check the specific directory for details.
 
