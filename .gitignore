@@ -1,1 +1,11 @@
+# macOS system files
 .DS_Store
+
+# Private keys and sensitive files (anywhere in the repo)
+**/private.pem
+**/*.key
+**/*.pem
+!**/public.pem
+
+# Keep empty directories
+!**/.gitkeep
