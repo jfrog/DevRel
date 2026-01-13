@@ -69,7 +69,7 @@ The prerequisites will vary depending on the specific workshop or demo you're wo
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/[your-org]/DevRel.git
+   git clone https://github.com/jfrog/DevRel.git
    cd DevRel
    ```
 
