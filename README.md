@@ -150,10 +150,7 @@ For detailed contribution guidelines, please see [CONTRIBUTING.md](./CONTRIBUTIN
 
 ### Community
 
-- **Discord/Slack**: [Join our community](#) *(link to be added)*
-- **Twitter**: Follow us [@YourHandle](#) *(handle to be added)*
-- **Blog**: Read our [developer blog](#) *(link to be added)*
-- **Office Hours**: We host regular office hours - [schedule TBD]
+- **Blog**: Read our [developer blog](https://jfrog.com/community/) *(link to be added)*
 
 ## 📜 License
 
