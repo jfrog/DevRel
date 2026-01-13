@@ -146,11 +146,11 @@ For detailed contribution guidelines, please see [CONTRIBUTING.md](./CONTRIBUTIN
 
 - **Issues**: Found a bug or have a question? [Open an issue](../../issues)
 - **Discussions**: Join our [community discussions](../../discussions)
-- **Documentation**: Check our [official documentation](#) *(link to be added)*
+- **Documentation**: Check our [official documentation](https://jfrog.com/help/r/jfrog-artifactory-documentation)
 
 ### Community
 
-- **Blog**: Read our [developer blog](https://jfrog.com/community/) *(link to be added)*
+- **Blog**: Read our [developer blog](https://jfrog.com/community/)
 
 ## 📜 License
 
