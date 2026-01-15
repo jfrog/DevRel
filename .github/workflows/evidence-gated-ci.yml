@@ -105,7 +105,7 @@ jobs:
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v3
         with:
-         subject-name: oci://${{ vars.JF_URL }}/evidenced-app:v${{ github.run_number }}
+         subject-name: oci://${{ vars.JF_URL }}/devrel-docker/evidenced-app:v${{ github.run_number }}
          subject-digest: ${{ steps.build-step.outputs.digest }} 
       - name: Set Signing Evidence on Docker
         run: |
