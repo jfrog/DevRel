@@ -102,6 +102,18 @@ jobs:
           push: true
           tags: ${{ vars.JF_URL }}/devrel-docker/evidenced-app:v${{ github.run_number }}
           platforms: linux/amd64,linux/arm64
+
+      - name: Debug - Log Build Metadata
+        run: |
+          echo "=== Full Metadata Output ==="
+          echo '${{ steps.build-step.outputs.metadata }}'
+          echo ""
+          echo "=== Extracted image.name ==="
+          echo '${{ fromJSON(steps.build-step.outputs.metadata)['image.name'] }}'
+          echo ""
+          echo "=== Digest ==="
+          echo '${{ steps.build-step.outputs.digest }}'
+
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v3
         with:
