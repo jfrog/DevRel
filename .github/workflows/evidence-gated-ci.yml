@@ -18,6 +18,10 @@ on:
 jobs:
   build-evidence-and-gate:
     runs-on: ubuntu-latest
+    env:
+      DOCKER_BUILD_SUMMARY: false
+      DOCKER_BUILD_RECORD_UPLOAD: false
+      JFROG_CLI_LOG_LEVEL: DEBUG
     defaults:
       run:
         working-directory: demos/showcases/evidence-gated-ci
