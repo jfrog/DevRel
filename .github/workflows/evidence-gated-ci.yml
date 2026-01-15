@@ -98,5 +98,36 @@ jobs:
           context: demos/showcases/evidence-gated-ci/app
           file: demos/showcases/evidence-gated-ci/app/Dockerfile
           push: true
-          tags: ${{ vars.JF_URL }}/devrel-docker/evidenced-app:latest
+          tags: ${{ vars.JF_URL }}/devrel-docker/evidenced-app:v${{ github.run_number }}
           platforms: linux/amd64,linux/arm64
+
+      - name: Set Signing Evidence on Docker
+        run: |
+          # Create signing evidence JSON file
+          SIGNING_ACTOR="${{ github.actor }}"
+          SIGNING_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          echo "{
+          \"actor\": \"${SIGNING_ACTOR}\",
+          \"date\": \"${SIGNING_DATE}\"
+          }" > sign.json
+
+          # Attach evidence using JFrog CLI
+          jf evd create \
+          --package-name ${{ vars.JF_URL }}/devrel-docker/evidenced-app:latest \
+          --package-version "${{ github.run_number }}" \
+          --package-repo-name devrel-docker \
+          --key "${{ secrets.EVIDENCE_SIGNING_PRIVATE_KEY }}" \
+          --key-alias devrel-demo-keys-alias \
+          --predicate ./sign.json \
+          --predicate-type https://jfrog.com/evidence/signature/v1
+
+          jf evd create \
+          --package-name ${{ vars.JF_URL }}/devrel-docker/evidenced-app:latest \
+          --package-version "v${{ github.run_number }}" \
+          --package-repo-name devrel-docker \
+          --key "${{ secrets.EVIDENCE_SIGNING_PRIVATE_KEY }}" \
+          --key-alias devrel-demo-keys-alias \
+          --predicate ./evidence/sbom.json \
+          --predicate-type https://jfrog.com/evidence/signature/v1
+
+          
