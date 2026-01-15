@@ -95,7 +95,7 @@ jobs:
 
       - name: Build and Push Docker Image
         id: 'build-step'
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v5
         with:
           context: demos/showcases/evidence-gated-ci/app
           file: demos/showcases/evidence-gated-ci/app/Dockerfile
