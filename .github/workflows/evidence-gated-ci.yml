@@ -84,9 +84,9 @@ jobs:
       - name: Login to JFrog Docker Registry
         uses: docker/login-action@v3
         with:
-          registry: devrel.jfrog.io
-          username: ${{ steps.setup-jfrog.outputs.USERNAME }}
-          password: ${{ steps.setup-jfrog.outputs.PASSWORD }}
+         registry: ${{ vars.JF_URL }}
+         username: ${{ steps.setup-jfrog.outputs.oidc-user }}
+         password: ${{ steps.setup-jfrog.outputs.oidc-token }}
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
@@ -94,7 +94,5 @@ jobs:
           context: demos/showcases/evidence-gated-ci/app
           file: demos/showcases/evidence-gated-ci/app/Dockerfile
           push: true
-          tags: devrel.jfrog.io/docker/myapp:latest
+          tags: ${{ vars.JF_URL }}/devrel-docker/evidenced-app:latest
           platforms: linux/amd64,linux/arm64
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
