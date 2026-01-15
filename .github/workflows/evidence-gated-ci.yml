@@ -1,5 +1,11 @@
 name: Evidence-Gated CI Demo
-
+permissions:
+  actions: read # for detecting the Github Actions environment.
+  id-token: write # for creating OIDC tokens for signing.
+  packages: write # for uploading attestations.
+  security-events: write # Required for uploading code scanning
+  attestations: write
+  contents: read
 on:
   push:
     paths:
