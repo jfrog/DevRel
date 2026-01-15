@@ -114,7 +114,7 @@ jobs:
           # Attach evidence using JFrog CLI
           jf evd create \
           --package-name ${{ vars.JF_URL }}/devrel-docker/evidenced-app:latest \
-          --package-version "${{ github.run_number }}" \
+          --package-version "v${{ github.run_number }}" \
           --package-repo-name devrel-docker \
           --key "${{ secrets.EVIDENCE_SIGNING_PRIVATE_KEY }}" \
           --key-alias devrel-demo-keys-alias \
