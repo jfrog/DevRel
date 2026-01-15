@@ -102,7 +102,11 @@ jobs:
           push: true
           tags: ${{ vars.JF_URL }}/devrel-docker/evidenced-app:v${{ github.run_number }}
           platforms: linux/amd64,linux/arm64
-
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v3
+        with:
+         subject-name: oci://${{ vars.JF_URL }}/${{ steps.build-step.outputs.image }}
+         subject-digest: ${{ steps.build-step.outputs.digest }} 
       - name: Set Signing Evidence on Docker
         run: |
           # Create signing evidence JSON file
