@@ -117,7 +117,7 @@ jobs:
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v3
         with:
-         subject-name: ${{ fromJSON(steps.build-step.outputs.metadata)['image.name'] }}
+         subject-name: oci://${{ fromJSON(steps.build-step.outputs.metadata)['image.name'] }}
          subject-digest: ${{ steps.build-step.outputs.digest }} 
       - name: Set Signing Evidence on Docker
         run: |
