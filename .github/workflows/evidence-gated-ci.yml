@@ -32,7 +32,7 @@ jobs:
         id: setup-jfrog
         uses: jfrog/setup-jfrog-cli@v4
         env:
-          JF_URL: https://${{ vars.JF_URL }}/
+          JF_URL: https://${{ vars.JF_URL }}
         with:
           oidc-provider-name: jfrog-github-oidc
           version: 2.88.0
