@@ -138,4 +138,13 @@ jobs:
           --predicate ./evidence/sbom.json \
           --predicate-type https://jfrog.com/evidence/signature/v1
 
+           jf evd create \
+          --package-name evidenced-app \
+          --package-version "v${{ github.run_number }}" \
+          --package-repo-name devrel-docker \
+          --key "${{ secrets.EVIDENCE_SIGNING_PRIVATE_KEY }}" \
+          --key-alias devrel-demo-keys-alias \
+          --predicate ./evidence/evidence.bundle.json \
+          --predicate-type https://jfrog.com/evidence/signature/v1
+
           
