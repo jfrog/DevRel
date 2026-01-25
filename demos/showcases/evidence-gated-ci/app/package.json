@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "expres": "0.0.5"
+    "exsprass": "5.0.0"
   }
 }
