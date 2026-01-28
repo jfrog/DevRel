@@ -10,9 +10,6 @@ on:
   push:
     paths:
       - 'demos/showcases/evidence-gated-ci/**'
-  pull_request:
-    paths:
-      - 'demos/showcases/evidence-gated-ci/**'
   workflow_dispatch:
 
 jobs:
